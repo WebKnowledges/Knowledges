@@ -1,4 +1,16 @@
 # 前端小分队读书计划
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+##     时间 ： 2016-12-01
+
+##     内容 ：前端知识及技术
+
+##     组长 ：何纪成
+
+##     成员 ： 郭乃豪，王立银，刘沈，宋健
+
+##     计划 ：
+
+##          每周五下午三点左右进行读书分享活动，每周两个人进行分享，分享类型为前端涉及知识以及相关技术！
+
+
 
