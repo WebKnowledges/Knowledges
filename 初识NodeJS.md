@@ -32,10 +32,9 @@ applications that run across distributed devices.
         1、并发高是选择Node js重要的优点   
         2、适合I/O密集型应用   
 ```
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缺点：   
-```
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缺点：  
          1、不适合CPU密集型应用；CPU密集型应用给Node带来的挑战主要是：由于JavaScript单线程的原因，
-         如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；
+            如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；
 
          解决方案：分解大型运算任务为多个小任务，使得运算能够适时释放，不阻塞I/O调用的发起。
 
@@ -53,7 +52,6 @@ applications that run across distributed devices.
           4、开源组件库质量参差不齐，更新快，向下不兼容
 
           5、Debug不方便，错误没有stack trace
-```
 ## 三、适合Node js的场景
 
 ### 1、Restful API
@@ -89,8 +87,8 @@ applications that run across distributed devices.
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置nodejs环境变量，在 export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL 一行的上面添加如下内容
 ```js
-          export NODE_HOME=/work/app/node/0.10.24
-          export PATH=$NODE_HOME/bin:$PATH
+        export NODE_HOME=/work/app/node/0.10.24
+        export PATH=$NODE_HOME/bin:$PATH
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:wq 保存并退出，编译/etc/profile 使配置生效
 
@@ -100,5 +98,5 @@ applications that run across distributed devices.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm模块安装路径
 ```shell
-          /work/app/node/0.10.24/lib/node_modules
+        /work/app/node/0.10.24/lib/node_modules
 ```
