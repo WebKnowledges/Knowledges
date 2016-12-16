@@ -7,12 +7,11 @@
 
 看下官网的介绍：
 
-```
 Node.js is a platform built on Chrome’s JavaScript runtime for easily building fast, 
 scalable network applications. Node.js uses an event-driven, non-blocking I/O model
 that makes it lightweight and efficient, perfect for data-intensive real-time 
 applications that run across distributed devices.
-```
+
 # Node.js的使用场景   
 在看他的使用场景之前先了解下Node js 的优缺点吧   
  
