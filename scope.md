@@ -1,4 +1,4 @@
-# 一、$scope
+# $scope
 
 &nbsp;&nbsp;&nbsp;&nbsp;Scope(作用域) 是应用在 HTML (视图) 和 JavaScript (控制器)之间的纽带。Scope 是一个对象，有可用的方法和属性。Scope 可应用在视图和控制器上。当在控制器中添加 $scope 对象时，视图 (HTML) 可以获取了这些属性。视图中，你不需要添加 $scope 前缀, 只需要添加属性名即可，如： {{carname}}。
 
