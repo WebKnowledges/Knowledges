@@ -25,7 +25,7 @@ applications that run across distributed devices.
         4、轻量、可伸缩、适用于实时数据交互应用
 
         5、单进程，单线程   
-##　二、Node js优、缺点　　　
+## 二、Node js优、缺点　　　
 ### 优点：
 1、并发高是选择Node js重要的优点 
   
