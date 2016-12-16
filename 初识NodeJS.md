@@ -66,7 +66,7 @@ applications that run across distributed devices.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，或者弹幕系统大量的用户同时通过评论，NodeJS能响应大量的并发请求。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。
-## 四、Node js安装配置
+# Node js安装配置
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、下载源码 更多版本：https://nodejs.org/en/download/
 ```shell
         cd /work/app/
@@ -87,10 +87,10 @@ applications that run across distributed devices.
 ```shell
         vim /etc/profile
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置nodejs环境变量，在 export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL 一行的上面添加如下内容
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置nodejs环境变量，在 export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL 一行的上面添加如下内容
 ```js
-export NODE_HOME=/work/app/node/0.10.24
-export PATH=$NODE_HOME/bin:$PATH
+          export NODE_HOME=/work/app/node/0.10.24
+          export PATH=$NODE_HOME/bin:$PATH
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:wq 保存并退出，编译/etc/profile 使配置生效
 
@@ -98,7 +98,7 @@ export PATH=$NODE_HOME/bin:$PATH
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node -v 输出 v0.10.24 表示配置成功
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm模块安装路径
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm模块安装路径
 ```shell
-        /work/app/node/0.10.24/lib/node_modules
+          /work/app/node/0.10.24/lib/node_modules
 ```
