@@ -65,5 +65,4 @@ applications that run across distributed devices.
 ### 3、大量的Ajax请求
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，或者弹幕系统大量的用户同时通过评论，NodeJS能响应大量的并发请求。
 
-　 　
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。
