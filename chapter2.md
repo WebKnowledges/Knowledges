@@ -6,4 +6,4 @@
 - ### 王立银    
   - #### [css优先级规则](css优先级规则.md)
 - ### 刘沈
-  - #### [AngularJS 指令的 Scope (作用域)](scope.md)
+  - #### [AngularJS 指令的 Scope (作用域)](scope-old.md)
