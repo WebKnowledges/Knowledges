@@ -27,31 +27,30 @@ applications that run across distributed devices.
 
         5、单进程，单线程   
 ##　二、Node js优、缺点　　　
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优点：
-```
-        1、并发高是选择Node js重要的优点   
-        2、适合I/O密集型应用   
-```
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缺点：  
-         1、不适合CPU密集型应用；CPU密集型应用给Node带来的挑战主要是：由于JavaScript单线程的原因，
-            如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；
+### 优点：
+1、并发高是选择Node js重要的优点 
+  
+2、适合I/O密集型应用
+### 缺点：  
+ 1、不适合CPU密集型应用；CPU密集型应用给Node带来的挑战主要是：由于JavaScript单线程的原因，
+    如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；
 
-         解决方案：分解大型运算任务为多个小任务，使得运算能够适时释放，不阻塞I/O调用的发起。
+ 解决方案：分解大型运算任务为多个小任务，使得运算能够适时释放，不阻塞I/O调用的发起。
 
-         2、因为是单进程单线程的只能使用一个CPU，不能充分使用CPU导致资源的浪费
+ 2、因为是单进程单线程的只能使用一个CPU，不能充分使用CPU导致资源的浪费
 
-         3、可靠性低、一呆代码某个环节崩溃，整个系统都将会崩溃
-            原因：他是单线程、但单进程的
+ 3、可靠性低、一呆代码某个环节崩溃，整个系统都将会崩溃
+    原因：他是单线程、但单进程的
 
-            解决方法：
+    解决方法：
 
-                3.1、Nginx反向代理负载均衡开多个进程，绑定多个端口
+        3.1、Nginx反向代理负载均衡开多个进程，绑定多个端口
 
-                3.2、开多个进程监听同一个端口，使用cluster模块
+        3.2、开多个进程监听同一个端口，使用cluster模块
 
-          4、开源组件库质量参差不齐，更新快，向下不兼容
+  4、开源组件库质量参差不齐，更新快，向下不兼容
 
-          5、Debug不方便，错误没有stack trace
+  5、Debug不方便，错误没有stack trace
 ## 三、适合Node js的场景
 
 ### 1、Restful API
@@ -65,38 +64,38 @@ applications that run across distributed devices.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总而言之，NodeJS适合运用在高并发、I/O密集、少量业务逻辑的场景。
 # Node js安装配置
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、下载源码 更多版本：https://nodejs.org/en/download/
+### 1、下载源码 更多版本：https://nodejs.org/en/download/
 ```shell
-        cd /work/app/
-        wget http://nodejs.org/dist/v0.10.24/node-v0.10.24.tar.gz
+cd /work/app/
+wget http://nodejs.org/dist/v0.10.24/node-v0.10.24.tar.gz
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、解压源码
+### 2、解压源码
 ```shell
-        tar -zxvf node-v0.10.24.tar.gz
+tar -zxvf node-v0.10.24.tar.gz
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、编译安装
+### 3、编译安装
 ```shell
-        cd node-v0.10.24
-        ./configure --prefix=/work/app
-        make
-        make install
+cd node-v0.10.24
+./configure --prefix=/work/app
+make
+make install
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、配置NODE_HOME，进入profile编辑环境变量
+### 4、配置NODE_HOME，进入profile编辑环境变量
 ```shell
-        vim /etc/profile
+vim /etc/profile
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置nodejs环境变量，在 export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL 一行的上面添加如下内容
+设置nodejs环境变量，在 export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL 一行的上面添加如下内容
 ```js
-        export NODE_HOME=/work/app/node/0.10.24
-        export PATH=$NODE_HOME/bin:$PATH
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:wq 保存并退出，编译/etc/profile 使配置生效
+export NODE_HOME=/work/app/node/0.10.24
+export PATH=$NODE_HOME/bin:$PATH
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source /etc/profile 验证是否安装配置成功
+:wq 保存并退出，编译/etc/profile 使配置生效
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node -v 输出 v0.10.24 表示配置成功
+source /etc/profile 验证是否安装配置成功
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm模块安装路径
-```shell
-        /work/app/node/0.10.24/lib/node_modules
+node -v 输出 v0.10.24 表示配置成功
+
+npm模块安装路径
+
+/work/app/node/0.10.24/lib/node_modules
 ```
