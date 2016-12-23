@@ -17,6 +17,7 @@
 
 ###### 易混淆    
 &#8194;&#8194;&#8194;&#8194;伪类(:link,:hover,:active,:visited,:focus,:first-child,:first,:left,:right,:lang)    
+
 &#8194;&#8194;&#8194;&#8194;伪元素(:first-letter,:first-line,:before,:after)
 #### 例子    
 ```css
